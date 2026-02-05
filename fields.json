@@ -1,0 +1,43 @@
+{
+  "title_en": { "label": "영문 제목", "group": "논문 제목", "style": "*Heading: TITLE", "matchText": "TITLE" },
+  "title_ko": { "label": "한글 제목", "group": "논문 제목", "style": "*Heading: TITLE", "matchText": "한글제목" },
+  "author": { "label": "표지 이름", "group": "저자 정보", "style": "*Title Pg Text & Dedication", "matchText": "이름" },
+  "author_ko": { "label": "한글 이름 (개요)", "group": "저자 정보", "style": "*Biblio: Author", "matchText": "홍길동" },
+  "author_bib_en": { "label": "영문 인용 이름", "group": "저자 정보", "style": "*Biblio: Author", "matchText": "Last, First Name" },
+  "date": { "label": "제출일 (Month Year)", "group": "제출일", "style": "*Title Pg Text & Dedication", "matchText": "Month Year" },
+  "abstract_en": { "label": "영문 초록", "group": "초록", "style": "*¶ Indented", "matchText": "Indented" },
+  "abstract_ko": { "label": "한글 초록", "group": "초록", "style": "*¶ Indented", "matchText": "Indented" },
+  "dedication": { "label": "헌정", "group": "헌정·감사", "style": "(없음)", "matchText": "이 논문을 000께 드립니다" },
+  "acknowledgements": { "label": "감사의 말", "group": "헌정·감사", "style": "*¶ Indented", "matchText": "Indented 내용." },
+
+  "ch1_background": { "label": "1.1 연구의 배경", "group": "제1장 서론", "style": "*¶ Indented", "matchText": "이 주제에 관심을 갖게 된 이유" },
+  "ch1_thesis": { "label": "1.2 논지진술", "group": "제1장 서론", "style": "*¶ Indented", "matchText": "이 논문이 말하고자 하는 바를 한 문장으로" },
+  "ch1_purpose": { "label": "1.3 연구의 목적", "group": "제1장 서론", "style": "*¶ Indented", "matchText": "왜 이 연구를 하는지 자신만의 이유를 진술한다" },
+  "ch1_goals": { "label": "1.4 연구의 목표", "group": "제1장 서론", "style": "*¶ Indented", "matchText": "결론과 제안에 보고할 수 있는 기대되는 일반적인 결과" },
+  "ch1_significance": { "label": "1.5 연구의 중요성", "group": "제1장 서론", "style": "*¶ Indented", "matchText": "연구를 완성한 후에 이 연구가 어떻게 사용되기를 기대하는가" },
+  "ch1_central": { "label": "1.6 연구의 핵심주제", "group": "제1장 서론", "style": "*¶ Indented", "matchText": "핵심 연구 주제는 연구할 변수들 중에서" },
+  "ch1_questions": { "label": "1.7 연구 질문", "group": "제1장 서론", "style": "*¶ Indented", "matchText": "핵심 연구 문제(문제 진술 또는 논지)에 있는 변수들을" },
+  "ch1_delimitations": { "label": "1.7 범위와 한계", "group": "제1장 서론", "style": "*¶ Indented", "matchText": "연구자 스스로가 설정한 프로젝트의 경계를" },
+  "ch1_definitions": { "label": "1.8 용어의 정의", "group": "제1장 서론", "style": "*¶ Indented", "matchText": "문제 진술에 중심이 되는 변수에 대한 용어를 정의한다" },
+  "ch1_assumptions": { "label": "1.9 연구의 가정", "group": "제1장 서론", "style": "*¶ Indented", "matchText": "자신의 신념, 확신, 전제, 의견" },
+  "ch1_methodology": { "label": "1.10 연구방법론", "group": "제1장 서론", "style": "*¶ Indented", "matchText": "본 연구의 방법론을 설명한다" },
+  "ch1_procedures": { "label": "1.11 연구의 개관", "group": "제1장 서론", "style": "*¶ Indented", "matchText": "논문의 과정과 절차를 간단히 정리한다" },
+  "ch1_summary": { "label": "1.13 요약", "group": "제1장 서론", "style": "*¶ Indented", "matchText": "본 1장에서는 서론으로서 연구의 배경" },
+
+  "ch2_intro": { "label": "2장 서두 (선행연구고찰)", "group": "제2장 선행연구", "style": "*¶ Indented", "matchText": "본 장에서는 도널드 맥가브란의 교회성장학에 나타난 개종을 연구함에 앞서" },
+  "ch2_1": { "label": "2.1 일차 소제목", "group": "제2장 선행연구", "style": "*¶ Indented", "matchText": "바탕체의 스타일은 (Style" },
+  "ch2_1_1": { "label": "2.1.1 이차 소제목", "group": "제2장 선행연구", "style": "*¶ Indented", "matchText": "그림을 인용할 때는 다음과 같은 방법으로" },
+  "ch2_summary": { "label": "2장 요약", "group": "제2장 선행연구", "style": "*¶ Indented", "matchText": "본 2장에서는 선행연구고찰로 기존 연구인 논문과" },
+
+  "ch3_intro": { "label": "3장 서두 (연구 방법론)", "group": "제3장 연구 방법론", "style": "*¶ Indented", "matchText": "본 장에서는 본 연구의 방법론을 살펴보고자 한다" },
+  "ch3_summary": { "label": "3장 요약", "group": "제3장 연구 방법론", "style": "*¶ Indented", "matchText": "본 3장에서는 연구방법론을 기술하였다" },
+
+  "ch4_summary": { "label": "4장 요약", "group": "제4장 본론", "style": "*¶ Indented", "matchText": "본 4장에서는 주제에 대한 성경적 고찰을 기술하였다" },
+  "ch5_summary": { "label": "5장 요약", "group": "제5장 본론", "style": "*¶ Indented", "matchText": "본 5장에서는 주제에 대한 신학적 고찰을 기술하였다" },
+  "ch6_summary": { "label": "6장 요약", "group": "제6장 본론", "style": "*¶ Indented", "matchText": "본 6장에서는 주제에 대한 기독교 문명사적 고찰을 기술하였다" },
+
+  "ch7_intro": { "label": "7장 서두 (결론)", "group": "제7장 결론", "style": "*¶ Indented", "matchText": "본장은 논문의 결론으로 지금까지의 연구과정을" },
+  "ch7_summary": { "label": "7장 요약", "group": "제7장 결론", "style": "*¶ Indented", "matchText": "전체 논문을 장별로 요약하시면 됩니다" },
+  "ch7_conclusion": { "label": "결론", "group": "제7장 결론", "style": "*¶ Indented", "matchText": "본 논문의 결론은 맥가브란 교회성장의 가장 핵심적인" },
+  "ch7_recommendations": { "label": "제언", "group": "제7장 결론", "style": "*¶ Indented", "matchText": "논문의 중요성과 관련한 제언을 합니다" }
+}

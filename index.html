@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>오이코스 논문 템플릿 자동 채우기</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <header class="header">
+      <h1>오이코스 논문 템플릿</h1>
+      <div class="header-buttons">
+        <button type="button" class="btn-header btn-save" id="btnSave">입력 내용 저장</button>
+        <button type="button" class="btn-header btn-load-saved" id="btnLoadSaved">저장된 내용 불러오기</button>
+        <button type="button" class="btn-header btn-load-docx" id="btnLoadDocx">DOCX에서 불러오기</button>
+        <input type="file" accept=".docx" id="fileDocx" style="display:none" />
+        <button type="button" class="btn-download" id="btnDownload">DOCX 다운로드</button>
+      </div>
+    </header>
+
+    <main class="main">
+      <aside class="panel panel-input">
+        <div class="panel-title">내용 입력</div>
+        <div class="form-wrap" id="formWrap"></div>
+        <div class="chat-wrap">
+          <div class="chat-hint">예: 제목: AI 활용 교육 연구</div>
+          <div class="chat-input-wrap">
+            <input type="text" class="chat-input" id="chatInput" placeholder="무엇이든 입력하세요 (예: 한글제목: ...)" autocomplete="off" />
+            <button type="button" class="chat-send" id="chatSend">입력</button>
+          </div>
+        </div>
+      </aside>
+
+      <section class="panel panel-preview">
+        <div class="panel-title">미리보기</div>
+        <div class="preview-doc" id="previewDoc"></div>
+      </section>
+    </main>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+node_modules/
+filled.docx
+data.json
+loadMap.json
+error_log.txt
+template_structure.txt
+*.log
+.DS_Store
