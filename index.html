@@ -11,17 +11,25 @@
     <header class="header">
       <h1>오이코스 논문 템플릿</h1>
       <div class="header-buttons">
+        <span id="autoSaveStatus" class="auto-save-status" aria-live="polite"></span>
         <button type="button" class="btn-header btn-save" id="btnSave">입력 내용 저장</button>
         <button type="button" class="btn-header btn-load-saved" id="btnLoadSaved">저장된 내용 불러오기</button>
+        <button type="button" class="btn-header btn-reset" id="btnResetPreview">미리보기 리셋</button>
         <button type="button" class="btn-header btn-load-docx" id="btnLoadDocx">DOCX에서 불러오기</button>
-        <input type="file" accept=".docx" id="fileDocx" style="display:none" />
+        <input type="file" accept=".docx,application/vnd.openxmlformats-officedocument.wordprocessingml.document" id="fileDocx" style="display:none" />
+        <button type="button" class="btn-header" id="btnExportJson">JSON 내보내기</button>
+        <button type="button" class="btn-header" id="btnImportJson">JSON 가져오기</button>
+        <input type="file" accept=".json" id="fileJson" style="display:none" />
         <button type="button" class="btn-download" id="btnDownload">DOCX 다운로드</button>
       </div>
     </header>
 
     <main class="main">
       <aside class="panel panel-input">
-        <div class="panel-title">내용 입력</div>
+        <div class="panel-title-row">
+          <div class="panel-title">내용 입력</div>
+          <label class="markdown-toggle-label"><input type="checkbox" id="markdownHintToggle" /> 마크다운 표시</label>
+        </div>
         <div class="form-wrap" id="formWrap"></div>
         <div class="chat-wrap">
           <div class="chat-hint">예: 제목: AI 활용 교육 연구</div>
@@ -34,7 +42,13 @@
 
       <section class="panel panel-preview">
         <div class="panel-title">미리보기</div>
-        <div class="preview-doc" id="previewDoc"></div>
+        <div class="preview-split">
+          <div class="preview-toc" id="previewToc" aria-label="목차"></div>
+          <div class="preview-body">
+            <div class="preview-doc" id="previewDoc"></div>
+          </div>
+        </div>
+        <div class="preview-sheets" id="previewSheets" aria-label="시트 목록"></div>
       </section>
     </main>
   </div>

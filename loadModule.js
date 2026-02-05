@@ -93,7 +93,13 @@ function extractDataFromDocx(buffer, baseDir) {
     fs.writeFileSync(loadMapPath, JSON.stringify(loadMap, null, 2), "utf8");
   }
 
-  const zip = new AdmZip(buffer);
+  let zip;
+  try {
+    zip = new AdmZip(buffer);
+  } catch (e) {
+    throw new Error("지원하지 않는 파일이거나 파일이 손상되었을 수 있습니다. 템플릿과 같은 양식의 DOCX인지 확인해 주세요.");
+  }
+
   let styleIdToName = {};
   const styleEntry = zip.getEntry("word/styles.xml");
   if (styleEntry) {
@@ -110,6 +116,7 @@ function extractDataFromDocx(buffer, baseDir) {
   }
 
   const docEntry = zip.getEntry("word/document.xml");
+  if (!docEntry) throw new Error("DOCX 구조가 올바르지 않습니다. 템플릿과 같은 양식의 파일인지 확인해 주세요.");
   const docDoc = new DOMParser().parseFromString(docEntry.getData().toString("utf8"));
   const body = docDoc.getElementsByTagNameNS(NS, "body")[0] || docDoc.documentElement;
   const paragraphs = body.getElementsByTagNameNS(NS, "p");
